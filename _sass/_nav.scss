@@ -42,6 +42,7 @@
             i{
                 color: $black;
                 padding: 0.5rem 0.5rem;
+                width: 30%;
                 &:hover{
                     color: $lightgrey;
                 }
@@ -60,7 +61,10 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-
+    .item-right{
+        display: flex!important;
+        justify-content: flex-end!important;
+    }
 }
 
 // Large devices (desktops, 992px and up)

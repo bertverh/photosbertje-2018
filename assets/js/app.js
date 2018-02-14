@@ -30,4 +30,8 @@ galleryThumb.on("click", function(){
     $(active).addClass("mage-active");
 });
 
+//----- disable right click -----//
+$(document).bind("contextmenu",function(e){
+    e.preventDefault();
+  });
 

@@ -6496,7 +6496,8 @@ a.text-dark:focus, a.text-dark:hover {
     color: black; }
 
 .gallery {
-  height: 100%; }
+  height: 100%;
+  margin: 0 100px; }
   .gallery .gallery-list {
     list-style: none;
     margin: 50px 0;
@@ -6509,16 +6510,13 @@ a.text-dark:focus, a.text-dark:hover {
       .gallery .gallery-list li:last-of-type {
         display: flex; }
       .gallery .gallery-list li .image {
-        max-width: 100vh !important;
         max-height: 80vh;
         align-self: center;
         display: block;
         margin: 0 auto 0 auto; }
 
 .gallery-thumb {
-  max-height: 80vh;
   overflow: auto;
-  margin: 50px 0;
   padding: 50px; }
   .gallery-thumb::-webkit-scrollbar {
     width: 0 !important; }
@@ -6526,8 +6524,8 @@ a.text-dark:focus, a.text-dark:hover {
     list-style: none;
     padding: 0; }
     .gallery-thumb .gallery-thumb-list li {
-      opacity: 0.4;
-      margin: 25px 0;
+      opacity: 1;
+      margin: 50px 0;
       transition: opacity 0.5s; }
       .gallery-thumb .gallery-thumb-list li:last-of-type {
         margin-top: 0; }
@@ -6584,28 +6582,12 @@ a.text-dark:focus, a.text-dark:hover {
 form.contact #gotcha {
   visibility: hidden; }
 
-@media (min-width: 576px) {
-  .front-banner .card h2 {
-    top: 20px;
-    font-size: 40px; } }
-@media (min-width: 768px) {
-  .front-banner {
-    margin-bottom: 50px; }
-    .front-banner .card h2 {
-      top: 20px;
-      font-size: 60px; } }
 @media (min-width: 992px) {
-  .btn-bestel {
-    max-width: 250px; }
-
-  .prijs {
-    text-align: right; }
-
-  form.gegevens {
-    margin-top: 0px; }
-
-  .betaalkeuze {
-    margin-top: 0px; } }
+  .gallery-thumb {
+    max-height: 90vh; }
+    .gallery-thumb .gallery-thumb-list li {
+      opacity: 0.4;
+      margin: 25px 0; } }
 .navbar {
   background-color: white !important;
   text-transform: uppercase;
@@ -6638,12 +6620,17 @@ form.contact #gotcha {
     .navbar .social-media a i {
       color: black;
       padding: 0.5rem 0.5rem;
+      width: 30%;
       transition: color 0.25s; }
       .navbar .social-media a i:hover {
         color: #c8c8c8; }
       .navbar .social-media a i:active {
         color: #646464; }
 
+@media (min-width: 768px) {
+  .item-right {
+    display: flex !important;
+    justify-content: flex-end !important; } }
 .footer {
   background: white !important;
   padding: 8px 0;
