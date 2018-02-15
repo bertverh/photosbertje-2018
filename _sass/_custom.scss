@@ -29,6 +29,7 @@ $yellow: rgb(245,211,52);
         }
     }
     a{
+        color: $grey;
         &:active{
             text-decoration: none;
         }   
@@ -122,40 +123,56 @@ $yellow: rgb(245,211,52);
 
 
 //red-accent.html-------------------//
-.parallax-bg {
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    top: 20px;
-  }
-  
-  .jumbotron {
-    height: 35vh;
-    width: 100%;
-    background:transparent;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    border: solid red 2px;
+.red-accent{
+    min-height: 90vh;
+    display: flex;
+    .logo-red-accent{
+        padding-bottom: 7px;
+    }
+    .article-red-accent{
+        p:last-of-type{
+            margin-bottom: 0;
+            a{
+                text-transform: uppercase;
+                color: $grey;
+                &:hover{
+                    color: $lightgrey;
+                }
+                &:active{
+                    color: $red;
+                }
+            }
+        }
+    }
+    .scroll_down{
+        text-transform: uppercase;
+        text-align: center;
+        p{
+            margin-bottom: 0;
+        }
+    }
 }
-
-
-  //original
-  /*.parallax-bg {
-    width: 100%;
-    height: 40vh;
-    z-index: -1;
-  }
-  
-  .jumbotron {
-    height: 35vh;
-    width: 100%;
-    background:transparent;
-    margin: 0;
-    padding: 0;
-  }*/
-  
-
+.visit-youtube{
+    //https://www.youtube.com/channel/UC75AYSh-Zq5L1A2uitX56MQ
+    margin: 100px 0;
+    a{
+        &:hover{
+            color: $lightgrey;
+        }
+        &:active{
+            color: $red;
+        }
+        .youtube-playbtn{
+            width: 100%!important;
+            font-size: 150px;
+        }
+    }
+    h1{
+        font-size: 50px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+}
 //-----------------------------//
 
 //contact.html-------------------//

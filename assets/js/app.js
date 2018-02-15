@@ -1,20 +1,3 @@
-var jumboHeight = $('.jumbotron').outerHeight();
-function parallax(){
-    var scrolled = $(window).scrollTop();
-    $('.parallax-bg').css('top', (jumboHeight-scrolled) + 'px');
-}
-/*var jumboHeight = $('.jumbotron').outerHeight();
-function parallax(){
-    var scrolled = $(window).scrollTop();
-    $('.parallax-bg').css('background-position-y', (jumboHeight-scrolled) + 'px');
-}*/ 
-
-$(window).scroll(function(e){
-    parallax();
-});
-
-
-
 //---- gallery ----//
 var galleryThumb = $(".gallery-thumb ul li"),
 gallery = $(".gallery ul li");
@@ -31,7 +14,7 @@ galleryThumb.on("click", function(){
 });
 
 //----- disable right click -----//
-$(document).bind("contextmenu",function(e){
+/*$(document).bind("contextmenu",function(e){
     e.preventDefault();
-  });
+  });*/
 
