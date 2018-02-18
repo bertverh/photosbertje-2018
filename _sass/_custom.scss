@@ -154,8 +154,10 @@ $yellow: rgb(245,211,52);
 }
 .visit-youtube{
     //https://www.youtube.com/channel/UC75AYSh-Zq5L1A2uitX56MQ
-    margin: 100px 0;
+    padding: 25px 0;
     a{
+        //text-align: right;
+        text-align: center;
         &:hover{
             color: $lightgrey;
         }
@@ -163,8 +165,12 @@ $yellow: rgb(245,211,52);
             color: $red;
         }
         .youtube-playbtn{
-            width: 100%!important;
-            font-size: 150px;
+            //width: 100%!important;
+            width: 13vw;
+            font-size: 13vw;
+            margin-right: 30px; //when in column margin0;
+            //text-align: right;
+            text-align: center;
         }
     }
     h1{

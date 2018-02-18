@@ -6561,14 +6561,18 @@ a.text-dark:focus, a.text-dark:hover {
       margin-bottom: 0; }
 
 .visit-youtube {
-  margin: 100px 0; }
-  .visit-youtube a:hover {
-    color: #c8c8c8; }
-  .visit-youtube a:active {
-    color: red; }
-  .visit-youtube a .youtube-playbtn {
-    width: 100% !important;
-    font-size: 150px; }
+  padding: 25px 0; }
+  .visit-youtube a {
+    text-align: center; }
+    .visit-youtube a:hover {
+      color: #c8c8c8; }
+    .visit-youtube a:active {
+      color: red; }
+    .visit-youtube a .youtube-playbtn {
+      width: 13vw;
+      font-size: 13vw;
+      margin-right: 30px;
+      text-align: center; }
   .visit-youtube h1 {
     font-size: 50px;
     text-transform: uppercase;
