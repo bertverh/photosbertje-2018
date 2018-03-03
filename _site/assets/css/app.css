@@ -6544,7 +6544,7 @@ a.text-dark:focus, a.text-dark:hover {
   min-height: 90vh;
   display: flex; }
   .red-accent .logo-red-accent {
-    padding-bottom: 7px; }
+    padding: 50px 100px 20px 100px; }
   .red-accent .article-red-accent p:last-of-type {
     margin-bottom: 0; }
     .red-accent .article-red-accent p:last-of-type a {
@@ -6561,7 +6561,7 @@ a.text-dark:focus, a.text-dark:hover {
       margin-bottom: 0; }
 
 .visit-youtube {
-  padding: 25px 0; }
+  padding: 100px 0; }
   .visit-youtube a {
     text-align: center; }
     .visit-youtube a:hover {
@@ -6569,12 +6569,11 @@ a.text-dark:focus, a.text-dark:hover {
     .visit-youtube a:active {
       color: red; }
     .visit-youtube a .youtube-playbtn {
-      width: 13vw;
-      font-size: 13vw;
-      margin-right: 30px;
+      width: 25vw;
+      font-size: 25vw;
       text-align: center; }
   .visit-youtube h1 {
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
     margin: 0; }
 
@@ -6594,6 +6593,19 @@ a.text-dark:focus, a.text-dark:hover {
 form.contact #gotcha {
   visibility: hidden; }
 
+@media (min-width: 768px) {
+  .red-accent .logo-red-accent {
+    padding: 0;
+    padding-bottom: 7px; }
+
+  .visit-youtube .youtube-playbtn {
+    width: 13vw !important;
+    font-size: 13vw !important;
+    margin-right: 30px; }
+  .visit-youtube h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 0; } }
 @media (min-width: 992px) {
   .gallery-thumb {
     max-height: 90vh; }
@@ -6638,6 +6650,8 @@ form.contact #gotcha {
         color: #c8c8c8; }
       .navbar .social-media a i:active {
         color: #646464; }
+  .navbar .navbar-toggler {
+    border: none; }
 
 @media (min-width: 768px) {
   .item-right {

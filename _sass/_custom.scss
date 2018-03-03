@@ -127,7 +127,7 @@ $yellow: rgb(245,211,52);
     min-height: 90vh;
     display: flex;
     .logo-red-accent{
-        padding-bottom: 7px;
+        padding: 50px 100px 20px 100px;
     }
     .article-red-accent{
         p:last-of-type{
@@ -154,9 +154,8 @@ $yellow: rgb(245,211,52);
 }
 .visit-youtube{
     //https://www.youtube.com/channel/UC75AYSh-Zq5L1A2uitX56MQ
-    padding: 25px 0;
+    padding: 100px 0;
     a{
-        //text-align: right;
         text-align: center;
         &:hover{
             color: $lightgrey;
@@ -165,16 +164,13 @@ $yellow: rgb(245,211,52);
             color: $red;
         }
         .youtube-playbtn{
-            //width: 100%!important;
-            width: 13vw;
-            font-size: 13vw;
-            margin-right: 30px; //when in column margin0;
-            //text-align: right;
+            width: 25vw;
+            font-size: 25vw;
             text-align: center;
         }
     }
     h1{
-        font-size: 50px;
+        font-size: 40px;
         text-transform: uppercase;
         margin: 0;
     }
@@ -208,11 +204,35 @@ form.contact{
     //index.html-------------------//
 
     //-----------------------------//
+
+    //red-accent.html-------------------//
+    
+    //-----------------------------//
+    
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+    //red-accent.html-------------------//
+    .red-accent{
+        .logo-red-accent{
+            padding: 0;
+            padding-bottom: 7px;
+        }
+    }.visit-youtube{
+        .youtube-playbtn{
+            width: 13vw!important;
+            font-size: 13vw!important;
+            margin-right: 30px;
+        }
+        h1{
+            font-size: 50px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+    }
     
+    //-----------------------------//
 }
 
 // Large devices (desktops, 992px and up)
@@ -227,7 +247,10 @@ form.contact{
             }
         }
     }
-//-----------------------------//
+    //-----------------------------//
+    //red-accent.html-------------------//
+
+    //-----------------------------//
 }
 
 // Extra large devices (large desktops, 1200px and up)
