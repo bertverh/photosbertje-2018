@@ -1,0 +1,100 @@
+//404.html-------------------//
+.error-page{
+    min-height: 90vh;
+    .error-row{
+        width: 100%;
+        .error-emblem{
+            text-align: right;
+            margin-top: 25px;
+            .fa{
+                display: grid;
+            }
+        }
+        .error-info{
+            text-align: center;
+            h1{
+                font-size: 200px;
+                span{
+                    font-size: 20px;
+                    color: $yellow;
+                }
+            }
+            h2{
+                font-size: 25px;
+                margin-bottom: 25px;
+                a{
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    &:hover{
+                        color: $yellow;
+                    }
+                    &:active{
+                        color: $grey;
+                    }
+                }
+                &:last-of-type{
+                    margin-bottom: 50px;
+                }
+            }
+            p{
+                font-size:1rem;
+                a{
+                    &:hover{
+                        color: $yellow;
+                    }
+                    &:active{
+                        color: $grey;
+                    }
+                }
+            }
+        }
+    }
+}
+//-----------------------------//
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .error-page{
+        display: flex!important;
+        .error-emblem{
+            font-size: 500px;
+        }
+        .error-info{
+            text-align: left!important;
+            h1{
+                font-size: 200px!important;
+                span{
+                    font-size: 20px;
+                }
+            }
+            h2{
+                font-size: 25px;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .error-emblem{
+        font-size: 500px;
+    }
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    
+}
+
+//when pages would be print
+@media print{
+    
+}

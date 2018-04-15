@@ -18,3 +18,8 @@ galleryThumb.on("click", function(){
     e.preventDefault();
   });*/
 
+
+var test = $(".navbar li");
+test.on("click", function(){
+    test.addClass(" tester");
+});

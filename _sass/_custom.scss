@@ -40,7 +40,6 @@ $yellow: rgb(245,211,52);
             border-radius: 0;
             border: none;
             background-color: $red;
-            transition: background-color 0.5s;
             &:hover{
                 background-color: $darkred;
             }
@@ -57,6 +56,9 @@ $yellow: rgb(245,211,52);
         font-weight: 900;
         color: rgba(0,0,0,1);
     }
+    transition: background-color 0.5s;
+    transition: opacity 0.5s;
+    transition: border-bottom 0.5s;
 }
 //-----------------------------//
 
@@ -91,6 +93,7 @@ $yellow: rgb(245,211,52);
     overflow: auto;
     //margin: 50px 0;
     padding: 50px;
+    margin-top: 25px;
     &::-webkit-scrollbar{ 
         width: 0 !important;//hide scrollbar 
     }
@@ -109,7 +112,6 @@ $yellow: rgb(245,211,52);
             &:hover{
                 opacity: 1;
             }
-            transition: opacity 0.5s;
         }
         .image-thumb{
             width: 100%;
@@ -124,23 +126,34 @@ $yellow: rgb(245,211,52);
 
 //red-accent.html-------------------//
 .red-accent{
-    min-height: 90vh;
+    min-height: 95vh;
     display: flex;
     .logo-red-accent{
         padding: 50px 100px 20px 100px;
     }
-    .article-red-accent{
-        p:last-of-type{
-            margin-bottom: 0;
+    .intro-red-accent{
+        a{
+            color: $grey;
+            text-transform: uppercase;
+            &:hover{
+                color: $lightgrey;
+            }
+            &:active{
+                color: $red;
+            }
+        }
+        p
+        {
             a{
-                text-transform: uppercase;
-                color: $grey;
-                &:hover{
-                    color: $lightgrey;
+                margin-bottom: 0;
+                .fa{
+                    width: 25px;
+                    text-align: center;
                 }
-                &:active{
-                    color: $red;
-                }
+            }
+            &:nth-last-child(2),
+            &:last-of-type{
+                margin-bottom: 0;
             }
         }
     }
@@ -152,50 +165,69 @@ $yellow: rgb(245,211,52);
         }
     }
 }
-.visit-youtube{
-    //https://www.youtube.com/channel/UC75AYSh-Zq5L1A2uitX56MQ
-    padding: 100px 0;
-    a{
-        text-align: center;
-        &:hover{
-            color: $lightgrey;
+
+//contact.html-------------------//
+.contact-page{
+    min-height: 90vh;
+    display: flex;
+    margin-top: 50px;
+    .contact-row{
+        width: 100%;
+        .contact_info{
+            h2{
+                margin: 0;
+                &:last-of-type{
+                    margin-top: 25px;
+                }
+            }
+            .fa{
+                width: 25px;
+                text-align: center;
+            }
+            a{
+                color: $grey;
+                &:hover{
+                    color: $lightgrey;
+                }
+                &:active{
+                    color: $black;
+                }
+            }
         }
-        &:active{
-            color: $red;
+        .contact_form{
+            form.contact{
+                *{
+                    border-radius: 0;
+                }
+                textarea:focus,
+                input:focus{
+                    box-shadow: none;
+                    border: $grey 1px solid;
+                }
+                #safety{
+                    height: 0;
+                    display:none;
+                }
+                .btn_verzend{
+                    border-bottom: $lightgrey 5px solid;
+                    width: 100%;
+                    text-align: left;
+                    &:hover{
+                        border-bottom: 5px solid $grey;
+                    }
+                    &:active{
+                        border-bottom: 5px solid $yellow;
+                    }
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+            }
         }
-        .youtube-playbtn{
-            width: 25vw;
-            font-size: 25vw;
-            text-align: center;
-        }
-    }
-    h1{
-        font-size: 40px;
-        text-transform: uppercase;
-        margin: 0;
     }
 }
 //-----------------------------//
 
-//contact.html-------------------//
-.fa{
-    width: 25px;
-    text-align: center;
-}
-#facebook_contact,
-#instagram_contact,
-#youtube_contact{
-    color: $black;
-    &:hover{
-        color: $lightgrey;
-    }
-}
-form.contact{
-    #gotcha{
-        visibility: hidden;
-    }
-}
-//-----------------------------//
 
 
 
@@ -206,7 +238,11 @@ form.contact{
     //-----------------------------//
 
     //red-accent.html-------------------//
-    
+    .visit-youtube{
+        h1{
+            font-size: 6vw;
+        }
+    }
     //-----------------------------//
     
 }
@@ -219,7 +255,11 @@ form.contact{
             padding: 0;
             padding-bottom: 7px;
         }
-    }.visit-youtube{
+        .intro-red-accent{
+            padding-left: 50px;
+        }
+    }
+    .visit-youtube{
         .youtube-playbtn{
             width: 13vw!important;
             font-size: 13vw!important;
@@ -227,11 +267,13 @@ form.contact{
         }
         h1{
             font-size: 50px;
-            text-transform: uppercase;
-            margin: 0;
         }
     }
-    
+    //-----------------------------//
+    //contact.html-------------------//
+    .contact-page{
+        margin-top:0;
+    }
     //-----------------------------//
 }
 
@@ -239,7 +281,7 @@ form.contact{
 @media (min-width: 992px) {
     //index.html-------------------//
     .gallery-thumb{
-        max-height: 90vh;
+        max-height: 95vh;
         .gallery-thumb-list{
             li{
                 opacity: 0.4;
@@ -256,4 +298,14 @@ form.contact{
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     
+}
+
+//when pages would be print
+@media print{
+    *{
+        .gallery,
+        .gallery-thumb{
+            visibility: hidden;
+        }
+    }
 }

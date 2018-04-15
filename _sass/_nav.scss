@@ -21,10 +21,10 @@
         &:active{
             border-bottom: 5px solid $grey;
         }
-        &.active{
+        &.active-bb{
             border-bottom: 5px solid $yellow;
         }
-        &.active:nth-child(2){
+        &.active-bb:nth-child(2){
             border-bottom: 5px solid $red;
         }
         transition: border-bottom 0.25s;
