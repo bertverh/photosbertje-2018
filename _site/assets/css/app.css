@@ -6521,7 +6521,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 .gallery-thumb {
   overflow: auto;
-  padding: 50px;
+  padding: 0px;
   margin-top: 25px; }
   .gallery-thumb::-webkit-scrollbar {
     width: 0 !important; }
@@ -6541,6 +6541,9 @@ a.text-dark:focus, a.text-dark:hover {
       width: 100%; }
     .gallery-thumb .gallery-thumb-list .mage-active {
       opacity: 1; }
+
+.gt_index {
+  margin: 50px 0px; }
 
 .red-accent {
   min-height: 95vh;
@@ -6570,22 +6573,26 @@ a.text-dark:focus, a.text-dark:hover {
 .contact-page {
   min-height: 90vh;
   display: flex;
-  margin-top: 50px; }
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
   .contact-page .contact-row {
     width: 100%; }
-    .contact-page .contact-row .contact_info h2 {
-      margin: 0; }
-      .contact-page .contact-row .contact_info h2:last-of-type {
-        margin-top: 25px; }
-    .contact-page .contact-row .contact_info .fa {
-      width: 25px;
-      text-align: center; }
-    .contact-page .contact-row .contact_info a {
-      color: #646464; }
-      .contact-page .contact-row .contact_info a:hover {
-        color: #c8c8c8; }
-      .contact-page .contact-row .contact_info a:active {
-        color: black; }
+    .contact-page .contact-row .contact_info {
+      margin-bottom: 50px; }
+      .contact-page .contact-row .contact_info h2 {
+        margin: 0; }
+        .contact-page .contact-row .contact_info h2:last-of-type {
+          margin-top: 25px; }
+      .contact-page .contact-row .contact_info .fa {
+        width: 25px;
+        text-align: center; }
+      .contact-page .contact-row .contact_info a {
+        color: #646464; }
+        .contact-page .contact-row .contact_info a:hover {
+          color: #c8c8c8; }
+        .contact-page .contact-row .contact_info a:active {
+          color: black; }
     .contact-page .contact-row .contact_form form.contact * {
       border-radius: 0; }
     .contact-page .contact-row .contact_form form.contact textarea:focus,
@@ -6605,11 +6612,17 @@ a.text-dark:focus, a.text-dark:hover {
         border-bottom: 5px solid #f5d334; }
       .contact-page .contact-row .contact_form form.contact .btn_verzend:focus {
         box-shadow: none; }
+    .contact-page .contact-row .contact_form form.contact .help-block {
+      color: red;
+      margin: 0 15px; }
 
 @media (min-width: 576px) {
   .visit-youtube h1 {
     font-size: 6vw; } }
 @media (min-width: 768px) {
+  .gallery-thumb {
+    padding: 50px; }
+
   .red-accent .logo-red-accent {
     padding: 0;
     padding-bottom: 7px; }
@@ -6627,10 +6640,18 @@ a.text-dark:focus, a.text-dark:hover {
     margin-top: 0; } }
 @media (min-width: 992px) {
   .gallery-thumb {
-    max-height: 95vh; }
+    max-height: 95vh;
+    padding: 50px 25px; }
     .gallery-thumb .gallery-thumb-list li {
       opacity: 0.4;
-      margin: 25px 0; } }
+      margin: 25px 0; }
+
+  .gt_index {
+    margin-top: 25px;
+    margin-bottom: 0px; } }
+@media (min-width: 1200px) {
+  .gallery-thumb {
+    padding: 50px; } }
 @media print {
   * .gallery,
   * .gallery-thumb {
@@ -6668,6 +6689,7 @@ a.text-dark:focus, a.text-dark:hover {
       color: black;
       padding: 0.5rem 0.5rem;
       width: 30%;
+      text-align: center;
       transition: color 0.25s; }
       .navbar .social-media a i:hover {
         color: #c8c8c8; }

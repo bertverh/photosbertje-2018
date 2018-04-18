@@ -2,7 +2,7 @@
 //--------------------------Set these paramaters--------------------------
 
 // Subject of email sent to you.
-$subject = 'Contactformulier Photosbertje.be';
+$subject = 'Contactformulier bertverheye.be';
 
 // Your email address. This is where the form information will be sent.
 $emailadd = 'info@photosbertje.be';
@@ -11,7 +11,7 @@ $emailadd = 'info@photosbertje.be';
 $email_from = $_POST['photosbertje@hotmail.com'];
 
 // Where to redirect after form is processed.
-$url = 'http://photosbertje.be/';
+$url = 'http://bertverheye.be/';
 
 // Makes all fields required. If set to '1' no field can not be empty. If set to '0' any or all fields can be empty.
 $req = '0';
@@ -43,6 +43,7 @@ $space = ' ';
 if(isset($_POST['gotcha']) && $_POST['gotcha'] == ''){
      // then send the form to your email
 mail($emailadd, $subject, $text, 'From: '.$email_from.'');
+echo "<script>alert('Success! Thanks for contacting us, we will get back to you shortly.')</script>";
 echo '<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';
 }
 ?>

@@ -14,12 +14,8 @@ galleryThumb.on("click", function(){
 });
 
 //----- disable right click -----//
-/*$(document).bind("contextmenu",function(e){
+/*
+$(document).bind("contextmenu",function(e){
     e.preventDefault();
-  });*/
-
-
-var test = $(".navbar li");
-test.on("click", function(){
-    test.addClass(" tester");
-});
+  });
+  */

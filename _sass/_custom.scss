@@ -92,7 +92,7 @@ $yellow: rgb(245,211,52);
 .gallery-thumb{
     overflow: auto;
     //margin: 50px 0;
-    padding: 50px;
+    padding: 0px;
     margin-top: 25px;
     &::-webkit-scrollbar{ 
         width: 0 !important;//hide scrollbar 
@@ -120,6 +120,9 @@ $yellow: rgb(245,211,52);
             opacity: 1;
         }
     }
+}
+.gt_index{
+    margin: 50px 0px;
 }
 //-----------------------------//
 
@@ -171,9 +174,12 @@ $yellow: rgb(245,211,52);
     min-height: 90vh;
     display: flex;
     margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     .contact-row{
         width: 100%;
         .contact_info{
+            margin-bottom: 50px;
             h2{
                 margin: 0;
                 &:last-of-type{
@@ -222,10 +228,15 @@ $yellow: rgb(245,211,52);
                         box-shadow: none;
                     }
                 }
+                .help-block{
+                    color: red;
+                    margin: 0 15px;
+                }
             }
         }
     }
 }
+
 //-----------------------------//
 
 
@@ -249,6 +260,9 @@ $yellow: rgb(245,211,52);
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+    .gallery-thumb{
+        padding: 50px;
+    }
     //red-accent.html-------------------//
     .red-accent{
         .logo-red-accent{
@@ -282,12 +296,17 @@ $yellow: rgb(245,211,52);
     //index.html-------------------//
     .gallery-thumb{
         max-height: 95vh;
+        padding: 50px 25px;
         .gallery-thumb-list{
             li{
                 opacity: 0.4;
                 margin: 25px 0;
             }
         }
+    }
+    .gt_index{
+        margin-top: 25px;
+        margin-bottom: 0px;
     }
     //-----------------------------//
     //red-accent.html-------------------//
@@ -297,7 +316,9 @@ $yellow: rgb(245,211,52);
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-    
+    .gallery-thumb{
+        padding: 50px;
+    }
 }
 
 //when pages would be print
